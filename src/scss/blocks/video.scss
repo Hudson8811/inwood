@@ -1,0 +1,45 @@
+.video {
+	padding-top: 127px;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 60px -10px 0;
+	}
+
+	&__item {
+		display: block;
+		width: calc(33.3333% - 20px);
+		height: 227px;
+		margin: 0 10px 20px;
+		position: relative;
+
+		@media (min-width: 1024px) {
+			&:hover::after {
+				opacity: 0.8;
+			}
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: url("../img/play.png") no-repeat center;
+			background-size: 30px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			opacity: 1;
+			transition: opacity 0.3s ease;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

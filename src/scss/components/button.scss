@@ -1,0 +1,51 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 11.5px 15px;
+	font-size: 15px;
+	letter-spacing: 0.02em;
+	color: $white;
+	text-transform: uppercase;
+	background-color: $green;
+	border: 1px solid $green;
+
+	@media (min-width: $dMin) {
+		&:hover,
+		&:focus {
+			color: $white;
+			text-decoration: none;
+			background-color: $green-dark;
+			border-color: $green-dark;
+		}
+	}
+
+	&--white {
+		background-color: transparent;
+		border-color: $white;
+
+		@media (min-width: $dMin) {
+			&:hover,
+			&:focus {
+				background-color: rgba($white, 0.3);
+				border-color: $white;
+			}
+		}
+	}
+
+	&--black {
+		background-color: transparent;
+		border-color: $dark-18;
+		color: $dark-18;
+
+		@media (min-width: $dMin) {
+			&:hover,
+			&:focus {
+				background-color: rgba($dark-18, 0.02);
+				border-color: $dark-18;
+				color: $dark-18;
+			}
+		}
+	}
+}

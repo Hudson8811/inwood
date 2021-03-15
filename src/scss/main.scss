@@ -1,0 +1,26 @@
+/* Libs */
+
+@import "vendor/fonts.css";
+@import "vendor/jquery.fancybox.css";
+@import "vendor/slick.css";
+@import "vendor/bootstrap.min.css";
+
+/* Global */
+
+@import "utils/base.css";
+@import "utils/vars";
+@import "utils/glob";
+
+/* Components */
+
+@import "components/button";
+@import "components/title";
+
+/* Blocks */
+
+@import "blocks/project-card";
+@import "blocks/design";
+@import "blocks/equipment";
+@import "blocks/model";
+@import "blocks/gallery";
+@import "blocks/video";

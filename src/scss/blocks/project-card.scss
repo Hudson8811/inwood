@@ -1,0 +1,115 @@
+.project-card {
+	max-width: 411px;
+	width: 100%;
+	padding: 67px 46px 44px;
+	background: rgba(24, 24, 24, 0.7);
+	position: absolute;
+	top: 0;
+	right: 17.7%;
+	z-index: 1;
+	color: $white;
+	letter-spacing: 0.02em;
+
+	&__name {
+		font-size: 25px;
+		margin-bottom: 15px;
+
+		span {
+			color: $green;
+		}
+	}
+
+	&__price {
+		font-size: 17px;
+		margin-bottom: 53px;
+
+		.prev {
+			color: $gray-e5;
+			text-decoration-line: line-through;
+			padding: 0 15px;
+		}
+
+		.current {
+			font-size: 25px;
+			font-weight: 500;
+		}
+	}
+
+	&__detail {
+		display: none;
+	}
+
+	&__detail-item {
+		display: flex;
+		align-items: center;
+
+		+ .project-card__detail-item {
+			margin-top: 15px;
+		}
+
+		svg {
+			fill: $white;
+			margin-right: 5px;
+		}
+
+		p {
+			font-family: $proxima;
+			margin: 0;
+
+			span {
+				font-family: $mainFont;
+			}
+		}
+	}
+
+	&__btn {
+		width: 217px;
+		margin: 0 auto;
+
+		&--buy {
+			margin-top: 50px;
+			margin-bottom: 15px;
+		}
+
+		&--want {
+			margin-bottom: 44px;
+
+			svg {
+				width: 14px;
+				height: 7px;
+				fill: $white;
+				margin-left: 15px;
+			}
+		}
+
+		&--toggle {
+			width: 187px;
+			color: $white;
+			text-decoration: none;
+
+			@media (min-width: $dMin) {
+				&:hover,
+				&:focus {
+					background-color: transparent;
+				}
+			}
+
+			&.open {
+				text-transform: none;
+				border: none;
+
+				svg {
+					transform: rotate(270deg);
+				}
+			}
+
+			svg {
+				width: 14px;
+				height: 7px;
+				fill: $white;
+				margin-left: 15px;
+				transform: rotate(90deg);
+			}
+		}
+	}
+}

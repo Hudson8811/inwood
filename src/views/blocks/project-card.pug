@@ -1,0 +1,30 @@
+.project-card
+	.project-card__name ПРОЕКТ <span>NW-041</span>
+	.project-card__price от
+		span.prev 2 900 000 ₽
+		span.current 1 900 000 ₽
+	.project-card__detail
+		.project-card__detail-item
+			+icon('plan')(width='25', height='25')
+			p Общая площадь: <span>124 м2</span>
+		.project-card__detail-item
+			+icon('hearth')(width='25', height='21')
+			p Жилая площадь: <span>96 м2</span>
+		.project-card__detail-item
+			+icon('house')(width='26', height='25')
+			p Размер: <span>15*9 м</span>
+		.project-card__detail-item
+			+icon('stair')(width='25', height='25')
+			p Высота потолков: <span>2,7 м</span>
+		.project-card__detail-item
+			+icon('bed')(width='25', height='18')
+			p Спален: <span>4</span>
+		.project-card__detail-item
+			+icon('wc')(width='25', height='25')
+			p Санузлов: <span>1</span>
+		.project-card__detail-item
+			+icon('facade')(width='25', height='25')
+			p Крыльцо/терраса: <span>есть</span>
+		+button('Купить в кредит', 'button--white project-card__btn project-card__btn--buy', '', '#')
+		+button('Хочу такой дом', 'project-card__btn project-card__btn--want', 'arrow', '#')
+	+button('Развернуть', 'button--white project-card__btn project-card__btn--toggle', 'arrow', '#')
