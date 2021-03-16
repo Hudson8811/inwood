@@ -1,24 +1,46 @@
 .design {
-	padding-top: 131px;
+	padding-top: 121px;
+
+	@media screen and (max-width: 1339px) {
+		padding-top: 50px;
+	}
 
 	&__plans {
 		display: flex;
 		margin: 69px -10px 0;
+
+		@media screen and (max-width: 767px) {
+			flex-direction: column;
+			margin: 40px 0 0;
+		}
 	}
 
 	&__plans-item {
 		width: calc(50% - 20px);
 		margin: 0 10px;
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			margin: 0 0 45px;
+		}
 	}
 
 	&__plans-item-image {
-		height: 611px;
+		padding-top: 100%;
 		border: 1px solid $green;
 		overflow: hidden;
+		position: relative;
 
 		img {
 			width: 100%;
 			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.mirrored {
+				display: none;
+			}
 		}
 	}
 
@@ -31,5 +53,14 @@
 	&__btn {
 		width: 167px;
 		margin: 28px auto 0;
+
+		@media screen and (max-width: 767px) {
+			margin-top: 0;
+		}
+
+		&.active {
+			background-color: $dark-18 !important;
+			color: $white !important;
+		}
 	}
 }

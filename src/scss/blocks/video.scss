@@ -1,5 +1,9 @@
 .video {
-	padding-top: 127px;
+	padding-top: 118px;
+
+	@media screen and (max-width: 1339px) {
+		padding-top: 50px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -8,10 +12,22 @@
 	}
 
 	&__item {
-		display: block;
 		width: calc(33.3333% - 20px);
-		height: 227px;
 		margin: 0 10px 20px;
+
+		@media screen and (min-width: 768px) and (max-width: 1339px) {
+			width: calc(50% - 20px);
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&__item-preview {
+		display: block;
+		width: 100%;
+		height: 227px;
 		position: relative;
 
 		@media (min-width: 1024px) {
@@ -41,5 +57,10 @@
 			height: 100%;
 			object-fit: cover;
 		}
+	}
+
+	&__item-caption {
+		font-size: 17px;
+		margin-top: 9px;
 	}
 }

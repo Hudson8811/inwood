@@ -2505,29 +2505,29 @@ html, body, #site {
 }
 
 .sect_contact {
-    padding: 55px 0px 200px;
+    padding: 14px 0px 53px;
 }
 
 .sect_contact .contact_wrap {
+    display: flex;
+    justify-content: center;
     margin: 40px 0px 0px;
 }
 
 .sect_contact .contact_wrap .map_bl {
-    float: left;
     width: 760px;
     height: 567px;
     margin: 0;
 }
 
 .sect_contact .contact_wrap .desc_bl {
-    float: right;
     width: 520px;
-    float: right;
     background: #F6F6F6;
     height: 558px;
     box-sizing: border-box;
     padding: 50px 50px;
     margin: 4px 0 0 0;
+    order: 1;
 }
 
 .sect_contact .contact_wrap .desc_bl .name {
@@ -2979,14 +2979,14 @@ html, body, #site {
     margin: 0px 95px;
 }
 
-.sect_project_single .top_links .mobile_title .title {
+.sect_project_single .top_links .mobile_title .title-top {
     font: 25px 'GothamPro';
     line-height: 30px;
     color: #838383;
     font-weight: 400;
 }
 
-.sect_project_single .top_links .mobile_title .title strong {
+.sect_project_single .top_links .mobile_title .title-top strong {
     font-weight: 500;
     color: #000;
 }
@@ -3131,6 +3131,7 @@ html, body, #site {
     border-bottom: 1px solid #E0E0E0;
     vertical-align: top;
     padding: 9px 0px 10px;
+    font-family: 'ProximaNova', sans-serif;
     letter-spacing: 0.02em;
 }
 
@@ -3139,6 +3140,7 @@ html, body, #site {
 }
 
 .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name {
+    width: 47%;
     font-family: 'ProximaNova', sans-serif;
     font-weight: 600;
     color: #000;
@@ -3184,6 +3186,7 @@ html, body, #site {
 
 .sect_project_single .dop_info_wrap .list {
     display: flex;
+    flex-wrap: wrap;
     margin: 12px 0px 0px;
     padding: 0px;
     list-style: none;
@@ -3205,7 +3208,7 @@ html, body, #site {
 }
 
 .sect_project_single .dop_info_wrap .list .ico {
-    margin: 0px 0px 10px;
+    margin: 0px auto 10px;
 }
 
 .sect_project_single .dop_info_wrap .list .ico img {
@@ -5377,7 +5380,7 @@ html, body, #site {
     }
 
     .sect_contact .contact_wrap {
-        margin: 58px 0px 0px;
+        margin: 0px;
     }
 
     .sect_contact .contact_wrap .map_bl {
@@ -5696,7 +5699,7 @@ html, body, #site {
     }
 
     .sect_project_single .top_links .mobile_title {
-        display: inline-block
+        display: inline-block;
     }
 
     .akciya-de {
@@ -5794,9 +5797,8 @@ html, body, #site {
 
     .sect_project_single .dop_info_wrap .list li {
         width: 50%;
-        padding: 0px 80px 0px 0px;
+        padding: 0px;
         border: 0px;
-        text-align: left;
     }
 
     .sect_project_single .dop_info_wrap .list li .ico {
@@ -6200,8 +6202,7 @@ html, body, #site {
     }
 
     .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl {
-        border-bottom: 1px solid #E0E0E0;
-        padding-bottom: 37px;
+        width: 50%;
         margin: 0px 0px 34px;
     }
 
@@ -6209,17 +6210,8 @@ html, body, #site {
         margin: 0px 0px 11px;
     }
 
-    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name .full_link, .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name span, .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table tr:hover .name .full_link {
+    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name .full_link, .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table tr:hover .name .full_link {
         display: none;
-    }
-
-    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name .mob_link {
-        display: block;
-        color: #000;
-        text-transform: none;
-        font-size: 14px;
-        line-height: 18px;
-        margin: 0px;
     }
 
     .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table td {
@@ -6238,7 +6230,7 @@ html, body, #site {
     .sect_project_single .dop_info_wrap .list li .ico {
         width: 132px;
         height: 110px;
-        margin: 0px 0px 18px;
+        margin: 0px auto 18px;
     }
 
     .sect_project_single .dop_info_wrap .list li .ico img {
@@ -6306,6 +6298,14 @@ html, body, #site {
 }
 
 @media screen and (max-width: 767px) {
+    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl {
+        width: 100%;
+    }
+
+    .slider-for .item {
+        height: 450px;
+    }
+
     head, body, #site {
         font-size: 16px;
         line-height: 22px;
@@ -6942,7 +6942,7 @@ html, body, #site {
     }
 
     .sect_contact {
-        padding: 65px 0px;
+        padding: 65px 0px 0px;
     }
 
     .sect_contact_inner {
@@ -6950,7 +6950,8 @@ html, body, #site {
     }
 
     .sect_contact .contact_wrap {
-        margin: 60px 0px 0px;
+        flex-direction: column;
+        margin: 0px;
     }
 
     .sect_contact .contact_wrap .map_bl {
@@ -7039,7 +7040,7 @@ html, body, #site {
     }
 
     .sect_project_single .top_links .mobile_title {
-        margin: 0px 40px;
+        margin: 0px 10px;
     }
 
     .popup_wrapper > .popup_project {
@@ -7259,7 +7260,6 @@ html, body, #site {
     }
 
     .sect_project_single .project_tab_wrap .project_item {
-        border: 1px solid #E0E0E0;
         display: block;
         padding: 0px;
     }
@@ -7271,7 +7271,6 @@ html, body, #site {
     .sect_project_single .project_tab_wrap .project_item .mobile_desc {
         padding: 20px;
         background: #fff;
-        display: none;
     }
 
     .sect_project_single .project_tab_wrap .project_tab_bl > .open .mobile_desc {
@@ -7344,7 +7343,7 @@ html, body, #site {
 
     .sect_project_single .dop_info_wrap .list li {
         width: 50%;
-        padding: 0px 80px 0px 0px;
+        padding: 0px;
         border: 0px;
         text-align: left;
         font-size: 17px;
@@ -7973,13 +7972,8 @@ html, body, #site {
         left: 75%;
     }
 
-    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name .full_link, .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name span, .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table tr:hover .name .full_link {
+    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name .full_link, .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table tr:hover .name .full_link {
         display: none;
-    }
-
-    .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table .name .mob_link {
-        display: block;
-        color: #000;
     }
 
     .popup_wrapper > .popup_info {
@@ -8003,7 +7997,7 @@ html, body, #site {
     .sect_project_single .dop_info_wrap .list li .ico {
         width: 132px;
         height: 110px;
-        margin: 0px 0px 18px;
+        margin: 0px auto 18px;
     }
 
     .sect_project_single .dop_info_wrap .list li .ico img {
@@ -8051,6 +8045,11 @@ html, body, #site {
 
     #head .head_contact .ph_bl {
         display: none !important;
+    }
+
+    .sect_project_single .top_links .mobile_title {
+        max-width: 250px;
+        margin: 0;
     }
 
     .mobile-phone {
@@ -8271,9 +8270,8 @@ html, body, #site {
     }
 
     .sect_project_single .dop_info_wrap .list li {
-        float: none;
+        width: 100%;
         margin: 0px 0px 20px;
-        width: auto;
         border: 0px;
     }
 
@@ -8302,6 +8300,12 @@ html, body, #site {
 
     .sect_project_single .dop_info_wrap .list .name {
         color: #000;
+        text-align: left;
+    }
+
+    .sect_project_single .dop_info_wrap .list .desc {
+        text-align: left;
+        padding: 0 10px;
     }
 
     .popup_wrapper > li {
@@ -8801,8 +8805,7 @@ span.wpcf7-list-item {
 @media screen and (min-width: 768px) and (max-width: 1339px) {
 
     .img_wrap {
-        width: 719px;
-        float: none;
+        width: 100%;
     }
 
     .slider-nav {
@@ -8935,6 +8938,7 @@ span.wpcf7-list-item {
 @media screen and (max-width: 767px) {
     .sect_contact .contact_wrap .desc_bl {
         height: auto !important;
+        order: -1;
     }
 
     .contact_wrap .map_bl {

@@ -1,5 +1,9 @@
 .gallery {
-	padding-top: 148px;
+	padding-top: 137px;
+
+	@media screen and (max-width: 1339px) {
+		padding-top: 50px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -13,6 +17,18 @@
 		height: 198px;
 		margin: 0 10px 20px;
 		position: relative;
+
+		@media screen and (min-width: 768px) and (max-width: 1339px) {
+			width: calc(33.3333% - 20px);
+		}
+
+		@media screen and (max-width: 767px) {
+			width: calc(50% - 20px);
+		}
+
+		@media screen and (max-width: 479px) {
+			width: 100%;
+		}
 
 		@media (min-width: 1024px) {
 			&:hover::after {
@@ -34,6 +50,11 @@
 			right: 0;
 			opacity: 0;
 			transition: opacity 0.3s ease;
+
+			@media (max-width: 1023px) {
+				background: rgba(0, 0, 0, 0.1) url("../img/zoom.png") no-repeat center;
+				opacity: 1;
+			}
 		}
 
 		img {

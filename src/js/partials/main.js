@@ -23,12 +23,15 @@ $(document).ready(function () {
 		$(this).toggleClass('open').find('span').text($(this).hasClass('open') ? 'Свернуть' : 'Развернуть');
 		$(this).siblings('.project-card__detail').slideToggle(300);
 	});
+
+	$('.design__btn').click(function () {
+		$(this).toggleClass('active');
+		$(this).siblings('.design__plans').find('.mirrored').slideToggle(300);
+	});
 });
 
 // JavaScript Document
 jQuery(document).ready(function(e) {
-
-	//jQuery('.countdown').countdown({until: new Date(2019, 1, 18, 0, 0, 0), format: 'DHMS', padZeroes: true});
 
 	jQuery(".main_menu .mob_menu").click(function(){
 		if(jQuery(".main_menu").hasClass("open")){
