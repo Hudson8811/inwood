@@ -25,7 +25,9 @@
 	}
 
 	&__name {
+		font-family: 'GothamPro', sans-serif;
 		font-size: 25px;
+		font-weight: 400;
 		margin-bottom: 15px;
 
 		span {
@@ -34,10 +36,13 @@
 	}
 
 	&__price {
+		font-family: 'GothamPro', sans-serif;
 		font-size: 17px;
+		font-weight: 400;
 		margin-bottom: 53px;
 
 		.prev {
+			font-weight: 300;
 			color: $gray-e5;
 			text-decoration-line: line-through;
 			padding: 0 10px;
@@ -67,11 +72,12 @@
 		}
 
 		p {
-			font-family: $proxima;
+			font-weight: 400;
 			margin: 0;
 
 			span {
-				font-family: $mainFont;
+				font-family: 'GothamPro', sans-serif;
+				font-weight: 500;
 			}
 		}
 	}

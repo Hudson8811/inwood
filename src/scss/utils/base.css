@@ -3105,6 +3105,7 @@ html, body, #site {
 }
 
 .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl .info_name {
+    font-family: 'GothamPro', sans-serif;
     font-weight: 500;
     color: #a4c222;
     font-size: 20px;
@@ -3114,7 +3115,9 @@ html, body, #site {
 }
 
 .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl .info_subtitle {
+    font-family: 'GothamPro', sans-serif;
     font-size: 15px;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 13px;
 }
@@ -3132,6 +3135,7 @@ html, body, #site {
     vertical-align: top;
     padding: 9px 0px 10px;
     font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
     letter-spacing: 0.02em;
 }
 
@@ -3173,6 +3177,7 @@ html, body, #site {
 }
 
 .sect_project_single .dop_info_wrap .dop-title {
+    font-family: 'GothamPro', sans-serif;
     font-size: 25px;
     line-height: 40px;
     font-weight: 500;
@@ -3198,7 +3203,7 @@ html, body, #site {
     text-align: center;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.02em;
     min-height: 205px;
 }
@@ -3217,11 +3222,14 @@ html, body, #site {
 }
 
 .sect_project_single .dop_info_wrap .list .name {
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 6px;
 }
 
 .sect_project_single .dop_info_wrap .list .desc {
+    font-family: 'GothamPro', sans-serif;
     font-size: 14px;
     line-height: 16px;
     font-weight: 300;
