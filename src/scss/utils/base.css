@@ -3137,7 +3137,9 @@ html, body, #site {
     font-family: 'ProximaNova', sans-serif;
     font-weight: 400;
     letter-spacing: 0.02em;
-    word-break: break-word;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: manual;
 }
 
 .sect_project_single .project_tab_wrap .project_item .info_wrap .info_bl table tr:last-child td {
