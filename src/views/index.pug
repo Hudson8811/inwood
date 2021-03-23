@@ -36,27 +36,44 @@ block main
 						span  25 марта 2021 г.
 				a.bord_button.next_link.bord_button_arrow(href='https://inwood.ru/project/inw-044') сл. проект
 				.clear
-		.project_single_wrap
-			.img_wrap
-				.slider-for
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/v1-6.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/v2-6.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/p1-7.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/p2-5.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f1-6.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f2-6.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f3-5.jpg&w=896&zc=1')
-					.item
-						img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f4-5.jpg&w=896&zc=1')
-				include blocks/project-card.pug
-			.container
+		.container
+			.project_single_wrap
+				.img_wrap
+					.slider-for
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/v1-6.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/v2-6.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/p1-7.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/p2-5.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f1-6.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f2-6.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f3-5.jpg&w=896&zc=1')
+						.item
+							img(alt='' src='https://inwood.ru/wp-content/themes/bwstheme/timthumb.php?src=https://inwood.ru/wp-content/uploads/2020/01/f4-5.jpg&w=896&zc=1')
+					include blocks/project-card.pug
+
+				section.design.design--pos
+					+title('ПЛАНИРОВКА', 'Все изменения в проекте бесплатны')
+					.design__plans
+						.design__plans-item.design__plans-item--full
+							.design__plans-item-image
+								img(alt='' src='img/plan/plan-3.png')
+								img.mirrored(alt='' src='img/plan/plan-3.png')
+						.design__plans-item
+							.design__plans-item-image
+								img(alt='' src='img/plan/plan-3.png')
+								img.mirrored(alt='' src='img/plan/plan-3.png')
+						.design__plans-item
+							.design__plans-item-image
+								img(alt='' src='img/plan/plan-3.png')
+								img.mirrored(alt='' src='img/plan/plan-3.png')
+					+button('Зеркально', 'button--black design__btn')
 				include blocks/design.pug
 				include blocks/equipment.pug
 
