@@ -1,3 +1,4 @@
+/*стили для страниц Карточка товара*/
 @charset "utf-8";
 /* CSS Document */
 input::-moz-placeholder, textarea::-moz-placeholder {
@@ -3135,7 +3136,7 @@ html, body, #site {
     vertical-align: top;
     padding: 9px 0px 10px;
     font-family: 'ProximaNova', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.02em;
     -webkit-hyphens: none;
     -ms-hyphens: none;
