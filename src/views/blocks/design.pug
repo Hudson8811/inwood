@@ -3,12 +3,16 @@ section.design
 	.design__plans
 		.design__plans-item
 			.design__plans-item-image
-				img(alt='' src='img/plan/plan-1.jpg')
-				img.mirrored(alt='' src='img/plan/plan-2.jpg')
+				a(href='img/plan/plan-1.jpg', data-fancybox='design')
+					img(alt='' src='img/plan/plan-1.jpg')
+				a(href='img/plan/plan-2.jpg', data-fancybox='design-2')
+					img.mirrored(alt='' src='img/plan/plan-2.jpg')
 			.design__floor 1 этаж
 		.design__plans-item
 			.design__plans-item-image
-				img(alt='' src='img/plan/plan-2.jpg')
-				img.mirrored(alt='' src='img/plan/plan-1.jpg')
+				a(href='img/plan/plan-2.jpg', data-fancybox='design')
+					img(alt='' src='img/plan/plan-2.jpg')
+				a(href='img/plan/plan-1.jpg', data-fancybox='design-2')
+					img.mirrored(alt='' src='img/plan/plan-1.jpg')
 			.design__floor 2 этаж
 	+button('Зеркально', 'button--black design__btn')

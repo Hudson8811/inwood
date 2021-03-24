@@ -3365,7 +3365,7 @@ $(document).ready(function () {
 
 	$('.design__btn').click(function () {
 		$(this).toggleClass('active');
-		$(this).siblings('.design__plans').find('.mirrored').slideToggle(300);
+		$(this).siblings('.design__plans').find('.mirrored').slideToggle(300).parent().siblings('a').find('img').slideToggle(300);
 	});
 });
 
