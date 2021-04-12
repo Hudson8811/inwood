@@ -2655,8 +2655,8 @@ html, body, #site {
 }
 
 .breadcrump_wrap .breadcrump {
-    font: 13px 'GothamPro';
-    line-height: 20px;
+    font: 14px 'ProximaNova';
+    line-height: 17px;
     font-weight: 400;
     color: #848484
 }
@@ -2664,9 +2664,9 @@ html, body, #site {
 .breadcrump_wrap .breadcrump a {
     color: inherit;
     text-decoration: underline;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 12px 0px 0px;
     background: url(../img/breadcrump_ar.png) no-repeat right center;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 3px 0px 0px;
 }
 
 .breadcrump_wrap .breadcrump a:hover {

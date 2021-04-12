@@ -1,0 +1,97 @@
+extends templates/default
+
+block vars
+	-
+		const page = {
+		title: 'index.html'
+		};
+
+
+
+
+block main
+	include blocks/menu
+	.breadcrump_wrap
+		.container
+			.row
+				.col-lg-12
+					.breadcrump
+						a(href='https://inwood.ru') Главная
+						span Контакты
+
+	// Main
+	section.contacts.contacts--gallery
+		.container
+			+title('ОБРАТНАЯ СВЯЗЬ', 'мы с радостью ответим на все ваши вопросы', 'title--size')
+			.sect_contact
+				.contact_wrap
+					.contacts__images
+						a(href='img/gallery/gallery-1.jpg', data-fancybox='contacts-1')
+							img(alt='' src='img/gallery/gallery-1.jpg')
+						.contacts__images-inner
+							a(href='img/gallery/gallery-2.jpg', data-fancybox='contacts-1')
+								img(alt='' src='img/gallery/gallery-2.jpg')
+							a(href='img/gallery/gallery-3.jpg', data-fancybox='contacts-1')
+								img(alt='' src='img/gallery/gallery-3.jpg')
+					.desc_bl
+						.name
+							span Офис компании
+						.contact_bl.adres
+							.ico
+							|  г. Москва,
+							br
+							|  пр-т Маршала Жукова д.1 стр.1
+						.contact_bl.phone
+							.ico
+							.ph
+								a(href='tel:+74956779590') +7 495 677 95 90
+							.link
+								a.popup_open(href='mailto:info@inwood.ru') info@inwood.ru
+						.contact_bl.time
+							.ico
+							| пр.Маршала Жукова 1с1
+							br
+							| пн-вс:  с 10-00 до 20-00
+						.contact_bl.metro
+							.ico
+							.m МЦК Хорошево | Полежаевская
+						.links
+							a.fill_button.popup_open.fill_button_letter(href='popup_quest') написать нам
+							a.whatsapp(href='https://wa.me/79771825322' target='_blank')
+							a.viber(href='viber://add?number=79771825322' target='_blank')
+			.sect_contact.sect_contact--reverse
+				.contact_wrap
+					.contacts__images
+						.contacts__images-inner
+							a(href='img/gallery/gallery-2.jpg', data-fancybox='contacts-2')
+								img(alt='' src='img/gallery/gallery-2.jpg')
+							a(href='img/gallery/gallery-1.jpg', data-fancybox='contacts-2')
+								img(alt='' src='img/gallery/gallery-3.jpg')
+						a(href='img/gallery/gallery-1.jpg', data-fancybox='contacts-2')
+							img(alt='' src='img/gallery/gallery-1.jpg')
+					.desc_bl
+						.name
+							span Производство
+						.contact_bl.adres
+							.ico
+							|  г. Москва,
+							br
+							|  пр-т Маршала Жукова д.1 стр.1
+						.contact_bl.phone
+							.ico
+							.ph
+								a(href='tel:+74956779590') +7 495 677 95 90
+							.link
+								a.popup_open(href='mailto:product@inwood.ru') product@inwood.ru
+						.contact_bl.time
+							.ico
+							| пт-вс:  с 8-00 до 20-00
+						.contact_bl.metro
+							.ico
+							.m МЦК Хорошево | Полежаевская
+						.links
+							a.fill_button.popup_open.fill_button_letter(href='popup_quest') написать нам
+							a.whatsapp(href='https://wa.me/79771825322' target='_blank')
+							a.viber(href='viber://add?number=79771825322' target='_blank')
+			.map_bl
+				#map
